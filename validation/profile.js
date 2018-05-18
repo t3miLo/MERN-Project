@@ -45,11 +45,11 @@ module.exports = function validateProfileInput(data) {
       errors.linkedin = 'Not a valid URL'
       }
     }
-    if(!isEmpty(data.instagram)){
-      if(!Validator.isURL(data.instagram)){
-        errors.instagram = 'Not a valid URL'
-        }
-    }
+  if(!isEmpty(data.instagram)){
+    if(!Validator.isURL(data.instagram)){
+      errors.instagram = 'Not a valid URL'
+      }
+  }
 
   return {
     errors,
